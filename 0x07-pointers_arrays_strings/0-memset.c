@@ -3,16 +3,15 @@
 /**
  * _memset - a function that fills memory with a constant byte
  * @s: pointer to the memory to be filled
- * @c: the char in question
+ * @b: the bytes
  * @n: num of bytes to be filled
- * Return: 0
+ * Return: the pointer to s
  */
-void *_memset(void *s, int c, size_t n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int index;
-	unsigned char *memory = s, value = c;
+	char *pt = s;
 
-	for (index = 0; index < n; indexx++)
-		memory[index] = value;
-	return (memory);
+	while (n-- > 0)
+		*ptr++ = b;
+	return (s);
 }
