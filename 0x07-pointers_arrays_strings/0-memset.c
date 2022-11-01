@@ -5,11 +5,12 @@
  * @s: pointer to the memory to be filled
  * @b: the bytes
  * @n: num of bytes to be filled
+ *
  * Return: the pointer to s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	char i = 0;
+	int i = 0;
 
 	for (; n > 0; i++)
 	{
